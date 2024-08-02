@@ -42,7 +42,7 @@ const Partners = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-col-reverse lg:flex-row py-[50px] gap-[30px]">
+      <div className="w-full flex flex-col-reverse md:flex-row py-[50px] gap-[30px]">
         <div className="lg:w-1/2">
           {levels.map((item) => (
             <div key={item.id} className="w-full flex gap-5 p-5">
