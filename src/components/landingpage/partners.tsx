@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import muzi from '@/assets/images/partner-1.png'
 
 const Partners = () => {
   const levels = [
@@ -23,32 +25,21 @@ const Partners = () => {
       text: "Host your event effortlessly through BallotChain. BallotChain helps you engage your audience and make their voices heard in entertainment and beyound",
     },
   ];
+
+  const logos = [1, 2, 3, 4]
+
   return (
     <div className="wrapper flex flex-col gap-[30px]">
       <h1 className="text-3xl text-center text-primary font-bold">
         Our Partners
       </h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-[70px] justify-center">
-        <img
-          className="w-[100px] h-[30px]"
-          src="https://myballotchain.com/partners/partner-1.png"
-          alt="muzi"
-        />
-        <img
-          className="w-[100px] h-[30px]"
-          src="https://myballotchain.com/partners/partner-1.png"
-          alt="muzi"
-        />
-        <img
-          className="w-[100px] h-[30px]"
-          src="https://myballotchain.com/partners/partner-1.png"
-          alt="muzi"
-        />
-        <img
-          className="w-[100px] h-[30px]"
-          src="https://myballotchain.com/partners/partner-1.png"
-          alt="muzi"
-        />
+        {logos.map((item) => (
+            <div key={item}>
+            <Image className="w-[100px] h-[30px]" src={muzi}
+              alt="muzi" />
+            </div>
+        ))}
       </div>
 
       <div className="w-full flex flex-col-reverse lg:flex-row py-[50px] gap-[30px]">

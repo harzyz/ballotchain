@@ -1,4 +1,6 @@
 import React from "react";
+import arrowCurl from "@/assets/images/arrow.svg"
+import Image from "next/image";
 
 const OurDifference = () => {
   const difference = [
@@ -43,14 +45,10 @@ const OurDifference = () => {
           <button className="btn rounded-[99px] w-[120px]">See more</button>
         </div>
         <div className="w-[30%] hidden lg:block">
-          <img
-            className="w-full"
-            src="https://myballotchain.com/arrow/arrow.svg"
-            alt="arrow"
-          />
+          <Image className="w-full" src={arrowCurl} alt="arrow" />
         </div>
       </div>
-      <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-1 gap-5">
+      <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-5">
         {difference.map((item) => (
           <div key={item.id} className="w-full flex flex-col gap-2 h-[fit-content]">
             <p style={{ color: item.textColor }} className="border-b border-[#000] text-lg pb-2 ">{`0${item.id}.`}</p>

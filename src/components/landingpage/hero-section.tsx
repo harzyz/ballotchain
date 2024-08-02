@@ -33,9 +33,9 @@ const HeroSection = () => {
       </div>
     </div>
     <div className="w-full lg:w-1/2 flex justify-end relative">
-        <img src="https://myballotchain.com/landing/landing.jpg" alt="Streak Legend" />
+        <Image src={HeroImage} alt="Streak Legend" />
 
-      <div
+      {/* <div
         data-aos="fade-up"
         data-aos-delay="300"
         className="absolute p-2 text-xs font-nunito gap-2 flex items-center top-0 left-[-10px] md:left-[0px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px]"
@@ -47,7 +47,7 @@ const HeroSection = () => {
       >
         
         You finished top 1 on the leaderboard
-      </div>
+      </div> */}
     </div>
   </div>
   )

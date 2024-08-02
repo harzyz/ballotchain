@@ -8,6 +8,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
+
+  const date = new Date
+  const year = date.getFullYear()
   const company = [
     {
       id: 1,
@@ -60,7 +63,7 @@ const Footer = () => {
   ];
   return (
     <footer className="wrapper py-[50px]">
-      <div className="w-full flex flex-col lg:flex-row justify-between">
+      <div className="w-full flex flex-col gap-[30px] lg:flex-row md:justify-between">
         <div className="flex flex-col gap-5">
           <div className="w-[100px] h-[150px]">
             <Image
@@ -88,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="grid gridcols-1 md:grid-cols-3">
-          <div className=" flex flex-col px-[40px]">
+          <div className=" flex flex-col md:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Company</h4>
             <ul className="">
               {company.map((item) => (
@@ -96,7 +99,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className=" flex flex-col px-[40px]">
+          <div className=" flex flex-col md:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Resources</h4>
             <ul className="">
               {resources.map((item) => (
@@ -104,7 +107,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className=" flex flex-col px-[40px]">
+          <div className=" flex flex-col md:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Support</h4>
             <ul className="">
               {support.map((item) => (
@@ -115,7 +118,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center pt-[30px]">
-        Copyright 2024 All Rights Reserved{" "}
+        Copyright {year} All Rights Reserved
         <span className="font-bold">Terms and Conditions Privacy Policy</span>
       </p>
     </footer>
