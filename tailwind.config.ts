@@ -16,8 +16,7 @@ const config: Config = {
         secondary: "#01BE63"
       },
       fontFamily: {
-        lato: ["Lato", "sans-serif"],
-        nunito: ["Nunito", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"]
       },
       fontSize: {
         nl: ["56px", "64px"],

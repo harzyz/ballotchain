@@ -9,14 +9,14 @@ const HeroSection = () => {
       <h1
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
-        className="text-[25px] md:text-[35px] lg:text-[40px] font-bold text-primary"
+        className="text-[37px] md:text-[35px] lg:text-[40px] font-bold text-primary"
       >
         Secure, Transparent, and Accessible Voting with Blockchain Technology
       </h1>
       <p
         data-aos="fade"
         data-aos-delay="500"
-        className="text-[14px] lg:text-lg"
+        className="text-xl"
       >
         Experience the Future of Voting on Your Mobile Device Anywhere, Anytime!
       </p>
@@ -33,7 +33,7 @@ const HeroSection = () => {
       </div>
     </div>
     <div className="w-full lg:w-1/2 flex justify-end relative">
-        <Image src={HeroImage} alt="Streak Legend" />
+        <Image className='rounded-[8px]' src={HeroImage} alt="Streak Legend" />
 
       {/* <div
         data-aos="fade-up"
