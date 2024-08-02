@@ -32,7 +32,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="wrapper bg-[#ffffffb3] z-20 sticky top-0 flex justify-between items-center h-[100px]">
+    <div className="wrapper bg-[#ffffffb3] z-20 sticky top-0 flex gap-[100px] justify-between items-center h-[100px]">
       <div
         onClick={() => setIsOpen(!isOpen)}
         className={`toggle lg:hidden transition-all duration-500 ${isOpen ? 'change' : ''} `}
@@ -49,19 +49,19 @@ const Navbar = () => {
           alt="BallotChain Logo"
         />
       </div>
-      <nav className="h-full hidden w-[65%] lg:flex items-center">
-        <ul className="flex gap-5 items-center">
+      <nav className="h-full hidden w-full md:debugger justify-end lg:flex items-center">
+        <ul className="flex xl:gap-5 gap-4 w-full justify-end items-center">
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="py-2 px-3 text-sm rounded-[8px] hover:bg-primary hover:text-[#ffff]"
+              className="py-2 px-3 xl:text-sm text-xs rounded-[8px] hover:bg-primary hover:text-[#ffff]"
             >
               {item.navItem}
             </li>
           ))}
 
-          <li className="btn bg-white border border-primary text-primary hover:bg-primary hover:text-[#ffff]">Sign In</li>
-          <li className="btn">Create Account</li>
+          <li className="btn xl:text-sm text-xs bg-white border border-primary text-primary hover:bg-primary hover:text-[#ffff]">Sign In</li>
+          <li className="btn xl:text-sm text-xs">Create Account</li>
         </ul>
       </nav>
 
