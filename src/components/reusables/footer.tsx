@@ -63,7 +63,7 @@ const Footer = () => {
   ];
   return (
     <footer className="wrapper py-[50px]">
-      <div className="w-full flex flex-col gap-[30px] ps-[20px] lg:flex-row md:justify-between">
+      <div className="w-full flex flex-col gap-[30px] ps-[20px] md:flex-row md:justify-between">
         <div className="flex flex-col gap-5">
           <div className="w-[100px] h-[150px]">
             <Image
@@ -90,8 +90,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid gridcols-1 gap-5 lg:gap-0 md:grid-cols-3">
-          <div className=" flex flex-col md:px-[40px]">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-0 md:grid-cols-3">
+          <div className=" flex flex-col md:px-[10px] lg:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Company</h4>
             <ul className="">
               {company.map((item) => (
@@ -99,7 +99,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className=" flex flex-col md:px-[40px]">
+          <div className=" flex flex-col md:px-[10px] lg:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Resources</h4>
             <ul className="">
               {resources.map((item) => (
@@ -107,7 +107,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className=" flex flex-col md:px-[40px]">
+          <div className=" flex flex-col md:px-[10px] lg:px-[40px]">
             <h4 className="text-2xl font-bold text-primary">Support</h4>
             <ul className="">
               {support.map((item) => (
