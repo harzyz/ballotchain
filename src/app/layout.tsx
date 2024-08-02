@@ -5,7 +5,7 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BallotChain Logo",
+  title: "BallotChain",
   description: "Secure, Transparent, and Accessible Voting with Blockchain Technology",
 };
 
