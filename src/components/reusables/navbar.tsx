@@ -49,7 +49,7 @@ const Navbar = () => {
           alt="BallotChain Logo"
         />
       </div>
-      <nav className="h-full hidden w-full md:debugger justify-end lg:flex items-center">
+      <nav className="h-full hidden w-full justify-end lg:flex items-center">
         <ul className="flex xl:gap-5 gap-4 w-full justify-end items-center">
           {navItems.map((item) => (
             <li

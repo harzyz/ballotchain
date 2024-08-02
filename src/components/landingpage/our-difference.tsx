@@ -34,7 +34,7 @@ const OurDifference = () => {
       <div className="flex lg:w-1/2">
         <div className="flex flex-col lg:w-[70%] gap-5">
           <h1 className="text-4xl font-bold text-primary">
-            What makes us different?
+            What Makes Us Different?
           </h1>
           <p className="text-md">
             BallotChain is here to fix the problems of old-school voting, making
