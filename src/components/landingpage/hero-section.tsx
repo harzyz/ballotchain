@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import HeroImage from '@/assets/images/herosection-img.jpg'
+import manImage from "@/assets/images/dummy.png";
 
 const HeroSection = () => {
   return (
@@ -35,19 +36,53 @@ const HeroSection = () => {
     <div className="w-full lg:w-1/2 flex justify-end relative">
         <Image className='rounded-[8px]' src={HeroImage} alt="Streak Legend" />
 
-      {/* <div
+      <div
         data-aos="fade-up"
         data-aos-delay="300"
-        className="absolute p-2 text-xs font-nunito gap-2 flex items-center top-0 left-[-10px] md:left-[0px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px]"
+        className="absolute p-2 text-xs font-nunito gap-2 lg:flex items-center top-[20%] lg:right-[-55px] xl:right-[-65px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px] hidden"
       >
-        You unlocked a badge
+        <div className='flex items-center'>
+        <Image className='w-[30px] h-[30px] rounded-full' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <div className='bg-primary rounded-full w-[30px] text-white text-[10px] -ml-[8px] h-[30px] flex items-center justify-center'>
+          300+
+        </div>
+        </div>
+        <p className='text-primary w-[30px] text-[10px]'>Active Users</p>
       </div>
       <div
-        className="absolute p-2 font-nunito gap-2 lg:flex items-center top-[27px] lg:right-[-55px] xl:right-[-65px] bg-[white] border border-secondary h-[80px] w-[229px] rounded-[8px] hidden"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="absolute p-2 text-xs font-nunito gap-2 lg:flex items-center top-[50%] left-[-10px] md:left-[-70px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px] hidden"
+      >
+        <div className='flex items-center'>
+        <Image className='w-[30px] h-[30px] rounded-full' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <div className='bg-primary rounded-full w-[30px] text-white text-[10px] -ml-[8px] h-[30px] flex items-center justify-center'>
+          300+
+        </div>
+        </div>
+        <p className='text-primary w-[30px] text-[10px]'>Active Users</p>
+      </div>
+      <div
+        className="absolute p-2 font-nunito gap-2 lg:flex items-center top-[80%] lg:right-[-55px] xl:right-[-65px] bg-[white] border border-primary h-[56px] w-[229px] rounded-[8px] hidden"
       >
         
-        You finished top 1 on the leaderboard
-      </div> */}
+        <div className='flex items-center'>
+        <Image className='w-[30px] h-[30px] rounded-full' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <Image className='w-[30px] h-[30px] rounded-full -ml-[8px]' src={manImage} alt='dummy' />
+        <div className='bg-primary rounded-full w-[30px] text-white text-[10px] -ml-[8px] h-[30px] flex items-center justify-center'>
+          300+
+        </div>
+        </div>
+        <p className='text-primary w-[30px] text-[10px]'>Active Users</p>
+      </div>
     </div>
   </div>
   )

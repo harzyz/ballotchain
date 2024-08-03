@@ -5,6 +5,7 @@ import BallotChainLogo from "@/assets/images/ballotchain-logo.png";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { FaCaretDown } from "react-icons/fa";
 import Link from "next/link";
+import Modal from "./modal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,7 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="wrapper bg-[#ffffffb3] z-20 sticky top-0 flex gap-[100px] justify-between items-center h-[100px]">
+    <div className="wrapper md:bg-[#ffffffb3] bg-[#fff] z-20 sticky top-0 flex gap-[100px] justify-between items-center h-[100px]">
       <div
         onClick={() => setIsOpen(!isOpen)}
         className={`toggle lg:hidden transition-all duration-500 ${
@@ -112,34 +113,6 @@ const Navbar = () => {
               )}
             </div>
           ))}
-
-          <div>
-            {/* <Menu>
-              <MenuButton className="py-2 px-3 xl:text-sm text-xs rounded-[8px] hover:bg-primary hover:text-[#ffff]">
-                My account
-              </MenuButton>
-              <MenuItems className="z-20" anchor="bottom">
-                <MenuItem>
-                  <a
-                    className="block data-[focus]:bg-blue-100"
-                    href="/settings"
-                  >
-                    Settings
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a className="block data-[focus]:bg-blue-100" href="/support">
-                    Support
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a className="block data-[focus]:bg-blue-100" href="/license">
-                    License
-                  </a>
-                </MenuItem>
-              </MenuItems>
-            </Menu> */}
-          </div>
 
           <li className="btn xl:text-sm text-xs bg-white border border-primary text-primary hover:bg-primary hover:text-[#ffff]">
             Sign In

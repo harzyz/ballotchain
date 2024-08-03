@@ -21,12 +21,14 @@ body {
   background-color: #FFFFFF;
 }
 
-html {
-  @apply scroll-smooth;
+* {
+  scroll-behavior: smooth;
 }
 
 .family{
   font-family: 'Roboto', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @layer utilities {
