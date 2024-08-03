@@ -4,7 +4,7 @@ import HeroImage from '@/assets/images/herosection-img.jpg'
 
 const HeroSection = () => {
   return (
-    <div className="wrapper bg-[#fff] md:pb-10 py-[30px] flex flex-col gap-8 md:flex-row">
+    <div id='home' className="wrapper bg-[#fff] md:pb-10 py-[30px] flex flex-col gap-8 md:flex-row">
     <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:pe-2 justify-center">
       <h1
         data-aos="fade-up"

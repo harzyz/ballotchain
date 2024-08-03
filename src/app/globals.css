@@ -21,6 +21,10 @@ body {
   background-color: #FFFFFF;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 .family{
   font-family: 'Roboto', sans-serif;
 }
