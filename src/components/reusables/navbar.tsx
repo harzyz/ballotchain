@@ -101,7 +101,7 @@ const Navbar = () => {
                     anchor="bottom"
                   >
                     {item?.subMenu?.map((menu) => (
-                      <MenuItem>
+                      <MenuItem key={menu}>
                         <a className="block px-3 py-2 bg-primary text-white data-[focus]:bg-[#6681A1]">
                           {menu}
                         </a>

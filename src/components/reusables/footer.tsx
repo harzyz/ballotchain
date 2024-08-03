@@ -6,6 +6,7 @@ import InstagramIcon from "@/assets/icons/instagram-icon.svg";
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
+import Arrow from "./arrow";
 
 const Footer = () => {
 
@@ -63,6 +64,7 @@ const Footer = () => {
   ];
   return (
     <footer className="wrapper py-[50px]">
+      <Arrow />
       <div className="w-full flex flex-col gap-[30px] ps-[20px] md:flex-row md:justify-between">
         <div className="flex flex-col gap-5">
           <div className="w-[100px] h-[150px]">
