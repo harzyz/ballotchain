@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Menu>
                   <MenuButton
                     onClick={() => toggle(item.id)}
-                    className={`py-2 flex items-center gap-2 px-3 xl:text-sm text-xs rounded-[8px] hover:bg-primary hover:text-[#ffff] ${
+                    className={`py-2 flex items-center gap-1 px-3 xl:text-sm text-xs rounded-[8px] hover:bg-primary hover:text-[#ffff] ${
                       isActive === item.id ? "bg-primary text-[#fff]" : ""
                     }`}
                   >
