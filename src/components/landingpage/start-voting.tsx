@@ -2,7 +2,7 @@ import React from 'react'
 
 const StartVoting = () => {
   return (
-    <div className='wrapper py-[30px]'>
+    <div id='start' className='wrapper py-[30px]'>
       <div className="bg-primary text-center rounded-[8px] flex flex-col lg:flex-row justify-between p-5 lg:p-[50px] text-white">
         <p className='text-3xl'>🥳</p>
         <div className='flex lg:w-1/2 flex-col items-center text-white gap-5'>

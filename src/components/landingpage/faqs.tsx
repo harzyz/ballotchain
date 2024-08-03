@@ -34,7 +34,7 @@ const Faqs = () => {
         },
     ]
   return (
-    <div className='wrapper py-[30px]'>
+    <div id='faq' className='wrapper py-[30px]'>
       <h1 className='title text-center'>FAQ</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 py-[30px] gap-[40px]'>
         {faqs.map((item) => (

@@ -13,28 +13,34 @@ const Navbar = () => {
     {
       id: 0,
       navItem: "Home",
+      link: '#home'
     },
     {
       id: 2,
       navItem: "About Us",
+      link: '#about-us'
     },
     {
       id: 3,
       navItem: "Pricing",
       subMenu: ["Pricing", "How It Works"],
+      link: ''
     },
     {
       id: 4,
       navItem: "Who we serve",
+      link: '#start'
     },
     {
       id: 5,
       navItem: "Contact",
       subMenu: ["Contact Us", "Support"],
+      link: ''
     },
     {
       id: 6,
       navItem: "FAQ",
+      link: '#faq'
     },
   ];
 
@@ -70,7 +76,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <div key={item.id}>
               {item.navItem !== "Pricing" && item.navItem !== "Contact" ? (
-                <Link href='#home'>
+                <Link href={item.link}>
                   <li
                     onClick={() => toggle(item.id)}
                     className={`py-2 px-3 xl:text-sm text-xs rounded-[8px] hover:bg-primary hover:text-[#ffff] ${

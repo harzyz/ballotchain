@@ -30,7 +30,7 @@ const OurDifference = () => {
     },
   ];
   return (
-    <div className="wrapper flex flex-col gap-[30px] lg:gap-0 lg:flex-row py-[30px]">
+    <div id='about-us' className="wrapper flex flex-col gap-[30px] lg:gap-0 lg:flex-row py-[30px]">
       <div className="flex lg:w-1/2">
         <div className="flex flex-col lg:w-[70%] gap-5">
           <h1 className="text-4xl font-bold text-primary">
