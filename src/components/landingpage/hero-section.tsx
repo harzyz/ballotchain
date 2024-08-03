@@ -28,8 +28,8 @@ const HeroSection = () => {
         data-aos-offset="0"
         className='flex gap-5 lg:mt-5'
       >
-        <button className='btn'>Get Started</button>
-        <button className="btn bg-white border border-primary text-primary hover:bg-primary hover:text-[#ffff]">Book a Demo</button>
+        <button className='btn w-[150px]'>Get Started</button>
+        <button className="btn w-[150px] bg-white border border-primary text-primary hover:bg-primary hover:text-[#ffff]">Book a Demo</button>
       </div>
     </div>
     <div className="w-full lg:w-1/2 flex justify-end relative">
