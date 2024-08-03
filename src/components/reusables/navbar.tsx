@@ -5,7 +5,6 @@ import BallotChainLogo from "@/assets/images/ballotchain-logo.png";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { FaCaretDown } from "react-icons/fa";
 import Link from "next/link";
-import Modal from "./modal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
