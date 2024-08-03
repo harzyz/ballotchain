@@ -55,7 +55,7 @@ const HeroSection = () => {
       <div
         data-aos="fade-up"
         data-aos-delay="300"
-        className="absolute p-2 text-xs font-nunito gap-2 lg:flex items-center top-[50%] left-[-10px] md:left-[-70px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px] hidden"
+        className="absolute p-2 text-xs font-nunito gap-2 lg:flex items-center top-[40%] left-[-10px] md:left-[-70px] bg-[white] border border-primary h-[33px] w-[173px] md:h-[56px] md:w-[221px] rounded-[5px] md:rounded-[8px] hidden"
       >
         <div className='flex items-center'>
         <Image className='w-[30px] h-[30px] rounded-full' src={manImage} alt='dummy' />
